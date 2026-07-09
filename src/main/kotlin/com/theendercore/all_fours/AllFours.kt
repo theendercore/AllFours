@@ -1,10 +1,11 @@
 package com.theendercore.all_fours
 
+import com.theendercore.all_fours.config.AllFoursConfig
+import com.theendercore.all_fours.init.AFNet
 import me.fzzyhmstrs.fzzy_config.api.ConfigApi
 import net.minecraft.resources.Identifier
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
-import com.theendercore.all_fours.config.AllFoursConfig
 
 object AllFours {
 
@@ -18,6 +19,7 @@ object AllFours {
 
     fun init() {
         log.info("I love crawling in your walls!")
+        AFNet.init()
     }
 
     fun id(namespace: String, path: String): Identifier = Identifier.fromNamespaceAndPath(namespace, path)

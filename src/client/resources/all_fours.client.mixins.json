@@ -4,7 +4,11 @@
   "package": "com.theendercore.all_fours.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "ExampleMixin"
+    "AvatarRendererMixin",
+    "options.ControlsScreenMixin",
+    "HumanoidMobRendererMixin",
+    "LocalPlayerMixin",
+    "options.OptionsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
