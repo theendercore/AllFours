@@ -1,8 +1,6 @@
 package com.theendercore.all_fours
 
-import com.theendercore.all_fours.config.AllFoursConfig
 import com.theendercore.all_fours.init.AFNet
-import me.fzzyhmstrs.fzzy_config.api.ConfigApi
 import net.minecraft.resources.Identifier
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
@@ -14,8 +12,8 @@ object AllFours {
     @JvmField
     val log: Logger = LoggerFactory.getLogger(AllFours::class.simpleName)
 
-    @JvmField
-    var config = ConfigApi.registerAndLoadConfig(::AllFoursConfig)
+//    @JvmField
+//    var config = ConfigApi.registerAndLoadConfig(::AllFoursConfig)
 
     fun init() {
         log.info("I love crawling in your walls!")

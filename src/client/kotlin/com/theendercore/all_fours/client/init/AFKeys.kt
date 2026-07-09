@@ -12,7 +12,15 @@ object AFKeys {
 
     val crawl =
         registerKeyBinding(ToggleKeyMapping("key.$MODID.crawl", GLFW.GLFW_KEY_C, MOVEMENT, toggleCrawl::get, true))
-    val sit = registerKeyBinding(ToggleKeyMapping("key.$MODID.sit", GLFW.GLFW_KEY_Z, MOVEMENT, toggleSit::get, true))
+    val sit: ToggleKeyMapping = registerKeyBinding(
+        ToggleKeyMapping(
+            "key.$MODID.sit",
+            GLFW.GLFW_KEY_Z,
+            MOVEMENT,
+            toggleSit::get,
+            true
+        )
+    ) as ToggleKeyMapping
 
     fun init() = Unit
 
