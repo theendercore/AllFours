@@ -10,20 +10,18 @@ object AFOptions {
     val KEY_HOLD = Component.translatable("options.key.hold")
 
     @JvmField
-    val toggleCrawl = OptionInstance(
+    val toggleCrawl = OptionInstance.createBoolean(
         "key.$MODID.crawl",
         OptionInstance.noTooltip(),
         { _, isToggle -> if (isToggle) KEY_TOGGLE else KEY_HOLD },
-        OptionInstance.BOOLEAN_VALUES,
         false
     ) {}
 
     @JvmField
-    val toggleSit = OptionInstance(
+    val toggleSit = OptionInstance.createBoolean(
         "key.$MODID.sit",
         OptionInstance.noTooltip(),
         { _, isToggle -> if (isToggle) KEY_TOGGLE else KEY_HOLD },
-        OptionInstance.BOOLEAN_VALUES,
         true
     ) {}
 

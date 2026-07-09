@@ -1,7 +1,6 @@
 package com.theendercore.all_fours.mixin.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.theendercore.all_fours.AllFours;
 import net.minecraft.client.renderer.entity.player.AvatarRenderer;
 import net.minecraft.client.renderer.entity.state.AvatarRenderState;
 import org.spongepowered.asm.mixin.Mixin;
