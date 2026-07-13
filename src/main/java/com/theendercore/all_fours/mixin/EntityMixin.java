@@ -13,7 +13,7 @@ public class EntityMixin {
     @ModifyReturnValue(method = "isVisuallyCrawling", at = @At("RETURN"))
     boolean makeExtraCrawling(boolean original) {
         if (((Object) this) instanceof Player player) {
-            return MixinUtilKt.isCrawling(player) || original;
+            return (MixinUtilKt.isCrawling(player) && !player.isInWater()) || original;
         }
         return original;
     }
